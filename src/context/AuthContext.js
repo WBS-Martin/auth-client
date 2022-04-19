@@ -66,6 +66,7 @@ const AuthState = ({ children }) => {
       })
       localStorage.setItem('token', res.data.token)
       setLoggedIn(true)
+      setUser(userInfo.data)
     } catch (err) {
       console.log(err)
     }
